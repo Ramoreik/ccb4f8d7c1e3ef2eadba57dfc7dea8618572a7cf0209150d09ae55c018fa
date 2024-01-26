@@ -1,5 +1,5 @@
 - name: "Voyou"
-  hosts: all
+  hosts: localhost
   gather_facts: no
 
   tasks:
@@ -12,3 +12,4 @@
 
     - debug:
         var: enum
+      delegate_to: 127.0.0.1
