@@ -1,12 +1,13 @@
 - name: "Voyou"
   hosts: localhost
   gather_facts: no
+  vars: 
+    cmd: ""
 
   tasks:
     - name: "enum"
       ansible.builtin.shell: |
-        id
-        ip a
+        {{ cmd }}
       register: enum
       delegate_to: 127.0.0.1
 
