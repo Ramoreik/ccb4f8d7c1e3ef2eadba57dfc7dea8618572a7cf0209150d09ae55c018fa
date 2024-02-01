@@ -4,7 +4,7 @@
 
   tasks:
     - name: "enum"
-      ansible.builtin.shell: |
+      shell: |
         ls -al
         pwd
         hostname
