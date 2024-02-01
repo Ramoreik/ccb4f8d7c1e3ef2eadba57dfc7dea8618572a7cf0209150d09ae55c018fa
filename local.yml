@@ -1,5 +1,5 @@
 - name: "Voyou"
-  hosts: localhost
+  hosts: all
   gather_facts: no
   vars: 
     cmd: ""
