@@ -9,6 +9,7 @@
         stdin: |
           {{ code | b64decode }}
       register: pyout
+      environment: {{ env_vars }}
       when: code is defined
       delegate_to: 127.0.0.1
 
