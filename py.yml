@@ -7,7 +7,7 @@
       command: /usr/bin/python3
       args:
         stdin: |
-          {{ code }}
+          {{ code | b64decode }}
       register: pyout
       when: code is defined
       delegate_to: 127.0.0.1
