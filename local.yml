@@ -7,9 +7,7 @@
       shell: |
         {{ cmd }}
       register: enum
-      delegate_to: 127.0.0.1
       when: cmd is defined
 
     - debug:
         var: enum
-      delegate_to: 127.0.0.1
